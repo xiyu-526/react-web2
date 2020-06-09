@@ -1,0 +1,45 @@
+ul,li{
+  margin: 0; padding:0; list-style: none;
+}
+a{
+  color: #fff;
+}
+h1{
+  display: block; text-align: center; position: relative; z-index: 23; color: #ff0000; font-size: 50px;
+}
+#root{
+  width: 100%; max-width: 2560px;
+}
+.list{
+  display: block; font-size: 16px;
+}
+.list span{
+  display: block; text-align: center; margin: 10px 0 0;
+}
+.App-header{ position: absolute; left: 0; top: 0; }
+.App-header ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 22;
+}
+
+.App-header ul li{
+  margin: 0 20px;
+}
+.App-header ul li div{ margin: 30px 0;}
+canvas{
+  position: absolute; left: 0; top: 0;
+}
+.animateLine{ width: 300px; height: 30px; background-color: #ff0000; position: absolute; left: 20px; top: 20px; transition-duration: 1s;}
+.animateLine.on{
+  width: 600px;
+}
+
+#filterQh{ position: absolute; width: 100px; height: 50px; background-color: #333; color: #fff; left: 50%; transform: translateX(-50%); bottom: 100px; z-index: 222;}
+.hhh3{
+  position: relative; color: #fff; text-align: center; z-index: 223;
+}
+.Pis{
+  position: relative; color: #fff; text-align: center; z-index: 223;
+}
