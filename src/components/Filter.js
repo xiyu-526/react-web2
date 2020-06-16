@@ -35,10 +35,10 @@ class Filter extends Component{
         var pixelData = imageData.data;
 
         if(state.data.bianhua == 1){
-          for( var i = 0 ; i < pixelData.length ; i += 4 ){
-              var r = pixelData[i];
-              var g = pixelData[i+1];
-              var b = pixelData[i+2];
+          for( let i = 0 ; i < pixelData.length ; i += 4 ){
+              let r = pixelData[i];
+              let g = pixelData[i+1];
+              let b = pixelData[i+2];
 
               pixelData[i] = 255-r;
               pixelData[i+1] = 255-g;
@@ -46,13 +46,13 @@ class Filter extends Component{
               pixelData[i+3] = 255;
           }
         }else{
-          for( var i = 0 ; i < pixelData.length ; i += 4 ){
+          for( let i = 0 ; i < pixelData.length ; i += 4 ){
   
-              var r = pixelData[i];
-              var g = pixelData[i+1];
-              var b = pixelData[i+2];
-      
-              var grey = r*0.3+g*0.59+b*0.11;  //0.3 + 0.59 + 0.11 = 1
+              let r = pixelData[i];
+              let g = pixelData[i+1];
+              let b = pixelData[i+2];
+        
+              let grey = r*0.3+g*0.59+b*0.11;  //0.3 + 0.59 + 0.11 = 1
       
               pixelData[i] = grey;
               pixelData[i+1] = grey;

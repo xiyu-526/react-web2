@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
-import Mock from 'mockjs'
-import Ld from 'lodash'
+// import Mock from 'mockjs'
+// import Ld from 'lodash'
 import '../css/style.css';
 class Pip extends Component{
   constructor(props){
