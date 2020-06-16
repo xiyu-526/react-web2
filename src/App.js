@@ -2,7 +2,7 @@
  * @Author: xiyu
  * @Date: 2020-04-13 13:29:50 
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2020-06-16 16:13:07
+ * @Last Modified time: 2020-06-16 16:14:27
  */
 
 import React from 'react';
@@ -67,7 +67,7 @@ function App() {
                   state: { fromDashboard: true }
                 }}>带参数的链接</Link>
               </li>
-              <li><Link to="/fliter">滤镜调试2</Link> </li>
+              <li><Link to="/fliter">滤镜调试</Link> </li>
               <li><Link to="/balls">球球</Link> </li>
               <li><Link to="/tanchishe">贪吃蛇</Link> </li>
               <li><Link to="/slider">slider</Link> </li>
