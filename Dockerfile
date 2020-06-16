@@ -1,6 +1,6 @@
 FROM nginx
 
-LABEL name = 'react-web'
+LABEL name = 'react-web2'
 LABEL version = 'v1.0'
 
 COPY ./build /usr/share/nginx/html
