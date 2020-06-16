@@ -1,0 +1,21 @@
+此时生成的目录如下，但是，默认所有配置是隐藏起来的，要想自定义配置，需要运行一个命令：
+
+npm run eject
+
+如果出现以下错误：
+
+This git repository has untracked files or uncommitted changes:
+Remove untracked files, stash or commit any changes, and try again.
+
+原因： git 配置问题 到安装目录 以此执行以下命令
+
+//第一步
+git add .
+
+//第二步
+git commit -m "init"
+
+//第三步
+npm run eject
+
+这样就生成的新的结构目录,主要是增加config 和scripts packjage文件也发生了变化
