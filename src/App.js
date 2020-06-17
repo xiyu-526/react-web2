@@ -2,20 +2,20 @@
  * @Author: xiyu
  * @Date: 2020-04-13 13:29:50 
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2020-06-17 18:45:32
+ * @Last Modified time: 2020-06-17 18:49:06
  */
 
 import React from 'react';
-//import { BrowserRouter as Router, Route, Switch, NavLink, Link, Redirect, Prompt } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, NavLink, Link, Redirect, Prompt } from 'react-router-dom'
 import './App.css';
 
-// import List from './components/List'
-// import Content from './components/Content'
-// import Slider from './components/Slider'
-// import Balls from './components/Balls'
-// import Tcs from './components/Tcs'
-// import Filter from './components/Filter'
-// import Pip from './components/Pip'
+import List from './components/List'
+import Content from './components/Content'
+import Slider from './components/Slider'
+import Balls from './components/Balls'
+import Tcs from './components/Tcs'
+import Filter from './components/Filter'
+import Pip from './components/Pip'
 
 // const isActiveFunc = (match, location) => {
 //   console.log(match,'contact');
