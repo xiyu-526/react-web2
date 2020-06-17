@@ -2,7 +2,7 @@
  * @Author: xiyu
  * @Date: 2020-04-13 13:29:50 
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2020-06-17 18:49:06
+ * @Last Modified time: 2020-06-17 18:51:22
  */
 
 import React from 'react';
@@ -17,26 +17,26 @@ import Tcs from './components/Tcs'
 import Filter from './components/Filter'
 import Pip from './components/Pip'
 
-// const isActiveFunc = (match, location) => {
-//   console.log(match,'contact');
-//   return match
-// }
-// const tsEvents = ()=>{
-//   console.log("确定要离开吗？");
-// }
+const isActiveFunc = (match, location) => {
+  console.log(match,'contact');
+  return match
+}
+const tsEvents = ()=>{
+  console.log("确定要离开吗？");
+}
 
-// const pipe = (val)=>{
-//   console.log(val)
-// }
+const pipe = (val)=>{
+  console.log(val)
+}
 
-//   //内部组件
-//   const Temp = (props)=>{
-//     return (
-//     <div className="hhh3">
-//       <h3>{props["a"]}{props["b"]}{props["c"]}内部组件传值测试</h3>
-//     </div>
-//      )
-//  }
+  //内部组件
+  const Temp = (props)=>{
+    return (
+    <div className="hhh3">
+      <h3>{props["a"]}{props["b"]}{props["c"]}内部组件传值测试</h3>
+    </div>
+     )
+ }
 
 function App() {
   let keys = [];
@@ -46,12 +46,18 @@ function App() {
   //link replace的作用 加入点击 one two three 正常情况点击浏览器后退按钮依次 是 two one,如果加了replace 那么点击后退按钮后将一次性返回到第一次点击的路由
 
   return (
-    <div><h1>React微服务</h1></div>
+    <Router basename="/minooo">
+      <div>
+        <h1>React微服务</h1>
+      </div>
+      <Temp a="你" b="无敌" c="牛逼日飞机"></Temp>
+      <h2>React测试项目<br />哔哩哔哩网站数据列表爬取</h2>
+    </Router>
   );
   // return (
   //   <Router basename="/minooo">
-  //     <Temp a="你" b="无敌" c="牛逼日飞机"></Temp>
-  //     <h1>React测试项目<br />哔哩哔哩网站数据列表爬取</h1>
+  //     
+  //     
   //     <Pip pipe={mode=>pipe(mode)} />
   //     <div className="App">
   //       <header className="App-header">
