@@ -2,7 +2,7 @@
  * @Author: xiyu
  * @Date: 2020-04-13 13:29:50 
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2020-06-17 18:51:22
+ * @Last Modified time: 2020-06-17 21:21:23
  */
 
 import React from 'react';
@@ -52,13 +52,14 @@ function App() {
       </div>
       <Temp a="你" b="无敌" c="牛逼日飞机"></Temp>
       <h2>React测试项目<br />哔哩哔哩网站数据列表爬取</h2>
+      <Pip pipe={mode=>pipe(mode)} />
     </Router>
   );
   // return (
   //   <Router basename="/minooo">
   //     
   //     
-  //     <Pip pipe={mode=>pipe(mode)} />
+  //     
   //     <div className="App">
   //       <header className="App-header">
   //             <nav>
