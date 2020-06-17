@@ -2,7 +2,7 @@
  * @Author: xiyu
  * @Date: 2020-04-13 13:29:50 
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2020-06-17 21:21:23
+ * @Last Modified time: 2020-06-17 21:24:42
  */
 
 import React from 'react';
@@ -48,11 +48,33 @@ function App() {
   return (
     <Router basename="/minooo">
       <div>
-        <h1>React微服务</h1>
+        <h1>React微服务1</h1>
       </div>
       <Temp a="你" b="无敌" c="牛逼日飞机"></Temp>
       <h2>React测试项目<br />哔哩哔哩网站数据列表爬取</h2>
       <Pip pipe={mode=>pipe(mode)} />
+      <ul>
+            
+            <li>
+            <Prompt message={tsEvents} />
+            <Link to={{
+              pathname: '/courses',
+              search: '?sort=name',
+              hash: '#the-hash',
+              state: { fromDashboard: true }
+            }}>带参数的链接</Link>
+          </li>
+          <li><Link to="/fliter">滤镜调试中</Link> </li>
+          <li><Link to="/balls">球球</Link> </li>
+          <li><Link to="/tanchishe">贪吃蛇</Link> </li>
+          <li><Link to="/slider">slider</Link> </li>
+          <li><Link to="/list">二级目录</Link> </li>
+          <li><Link to="/nested/one">免费征途</Link></li>
+          <li><Link to="/nested/two">征途2</Link></li>
+          <li><Link replace to="/nested/Three">征途2手游</Link></li>
+          
+        </ul>
+      
     </Router>
   );
   // return (
