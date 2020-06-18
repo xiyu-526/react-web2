@@ -27,6 +27,7 @@ class List extends Component{
      
   }
 
+  
   //将要更新数据的时候触发的
 	componentWillUpdate(){
 		//console.log('02组件将要更新')
