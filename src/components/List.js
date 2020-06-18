@@ -27,7 +27,7 @@ class List extends Component{
      
   }
 
-  
+
   //将要更新数据的时候触发的
 	componentWillUpdate(){
 		//console.log('02组件将要更新')
@@ -48,7 +48,7 @@ class List extends Component{
     axios({
       method: 'get',
       //url: "/act/jd08/api.php?c=index&a=userinfo"
-      url: "/api/clip/v1/video/zonelist?page=total&platform=pc"
+      url: "/clip/v1/video/zonelist?page=total&platform=pc"
     }).then((resp) => {
       let data = resp.data.data;
       let arss = Object.keys(data);
